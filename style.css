@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #f9f9f9ae;
+    color: #333;
+}
+
+header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav a {
+  font-weight: 400;
+}
+
+.logo a {
+    font-size: 1.3rem;
+    letter-spacing: 0.18em;
+    font-weight: 450;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex: 1;
+    list-style: none;
+}
+
+.main-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: #333;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    color: #777;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav a {
+  color: #333;
+}
+
+.nav-icons i {
+  vertical-align: middle;
+}
+
+.side-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.side-menu li {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.side-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: #777;
+  font-weight: 400;
+}
+
+.side-menu i {
+  color: #777;
+  font-size: 16px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('gambar/readbook.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  color: white;
+}
+
+.hero-secondary {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("gambar/buku-perpus.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+
+.hero-about {
+  position: relative;
+  width: 35%;
+  height: 100vh;
+  background-image: url('gambar/about-img.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  color: white;
+}
+
+
+.about-content p, .about-secondary p  {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-secondary h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.hero p, .hero-secondary p a {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.hero-secondary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-about-secondary {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('gambar/readbook.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  color: white;
+  margin-top: 40px;
+
+}
+
+
+.hero-about-secondary p, .hero-secondary p  {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.products {
+  background-color: #f9f9f9;
+  padding: 80px 6%;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.aksi {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.product .btn-edit {
+  color: white;
+  background: #000000;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.product .btn-hapus {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 6px 12px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+
+.products h2 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  color: #2b2b2b;
+
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+
+}
+
+.product-list a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111;
+  padding-bottom: 3px;
+  letter-spacing: 1px;
+}
+
+.product {
+  flex: 1;
+  max-width: 200px;
+  text-align: left;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding-bottom: 7px;
+  padding-left: 7px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: #2b2b2b;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.product p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+
+.product h3,
+.product p {
+  margin: 6px 0;
+}
+
+.discover {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* .events {
+  background-color: #fafafa;
+  padding: 100px 6%;
+  text-align: left;
+}
+
+.events-header h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.events-header p {
+  padding-top: 20px;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  margin-bottom: 100px;
+  letter-spacing: 2px;
+  position: relative;
+} */
+
+.view-all-container {
+  margin-top: 80px;
+  display: none;
+}
+
+.view-all {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #111;
+  border-bottom: 1px solid #111;
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+
+footer {
+  background-color: #fff;
+  color: #2a2a2a;
+  font-size: 15px;
+  line-height: 1.8;
+  padding: 0;
+  margin-top: 50px;
+  font-family: "Times New Roman", serif;
+}
+
+.footer-top {
+  background-color: #653721;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 5px 0; 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 80px 8%;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.footer-logo p {
+  margin: 8px 0;
+  color: #2a2a2a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-column {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+.footer-column h4 {
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  margin: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  font-size: 50px;
+  color: #000000;
+}
+
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 2px;
+  transition: 0.3s ease;
+}
+
+.footer-bottom {
+  padding: 30px 8%;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.footer-social a {
+  color: #111;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #777;
+}
+
+.footer-settings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 8%;
+}
+
+.footer-settings select {
+  border: none;
+  border-bottom: 1px solid #2a2a2a;
+  background: transparent;
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  font-size: 14px;
+}
+
+.footer-credits p {
+  margin: 0;
+}
+
+.logo-2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.18em;
+  font-weight: 450;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.detail-container {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .detail-card {
+            display: flex;
+            gap: 30px;
+ 
+            background-color: #f9f9f9ae;
+            padding: 25px;
+            border-radius: 3px;
+        }
+
+        .head {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .detail-cover img {
+            width: 220px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+        }
+
+        .detail-cover h1 {
+            margin-bottom: 10px;
+        }
+
+        .genre, .halaman {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .deskripsi {
+            margin-top: 20px;
+        }
+
+        .deskripsi h3 {
+            margin-bottom: 10px;
+        }
+
+        .deskripsi p {
+            line-height: 1.7;
+            color: #333;
+        }
+.login-page {
+  min-height: 85vh;
+  background-color: #272738;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  color: #aaa;
+  font-size: 15px;
+}
+
+.login-box .form-control {
+  box-shadow: 0 0 0 0.5px #0a064b;
+}
+
+.login-box .btn-dark {
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 0.5px #0a064b;
+}
+
+.login-box .btn-dark:hover {
+  background-color: #000;
+  color: #fff;
+}
